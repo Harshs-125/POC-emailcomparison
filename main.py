@@ -16,16 +16,16 @@ import mysql.connector
 mydb = mysql.connector.connect(
   host="localhost",
   user="root",
-  password="mysispalak",
+  password="##",
   database="emaildata"
 )
 bucket_name1='harsh-with-attach'
 bucket_name2='harsh-without-attach'
 bucket_name3='harsh-withall-attach'
 
-s3 = boto3.client('s3',aws_access_key_id="ASIA56ES5MJTIZQBVWOF",
-                  aws_secret_access_key="U7DGR3taosD64IupVQzYbni9MRaxmpE8HyJCqkBT",
-                  aws_session_token="IQoJb3JpZ2luX2VjEKj//////////wEaCmFwLXNvdXRoLTEiRjBEAiA366D23ep5qtDJuHNXO20A+fKO+O8AXWoPHpm/CIgm2AIgWa3nCGDSu7letgjAP+NbPkSS2IYiyBRQrT36sdI6c2Eq6gEIcRAAGgw5NTgwODU4MTY5MzQiDA452bb8/W5WW0EDYirHAXPxHgXK596N3wLJV8a9jZ9sqy/AIQKiIW2Sx/x6qsqYyqGKJAwSYAoZBm/Xll7xQQJnjJ0OKf18M+xiB6v0GxM1Li6hBeW3ZIUiHofLQQap9pdAiXpWRgYwMPPyCa3NtjLh9UPdaYy2+EvM31RCsZ7LfHlmQj95E0+Jn6d71lLFXejmoYlBMHUku/3yan3RR19DgYFBnNBM33EjTJu0X1+yztiA6oZEaOQGHL6zvXAlSCazqxhwex2RUsl5cIdkcOqUXgRMxLow8qXgoAY6mQGAYFV4plwxHnH513OKkUlsSdR95HLcMsTWMR6b3osCJo8N78L5SPONotqEyDXTb+Q9/k5cHxc8oBL78sxAk+L9vTUUzu2ULQ2hiZibi3qfi0I6iqG8ZvkMxKDbaKzGhSQpLjID+f2V7nvMr7G2By4D476jO8JuFspecAppJiAvcWXRn92jyKR1Pj3+KSlvwge7aLfXATcdf0E=")
+s3 = boto3.client('s3',aws_access_key_id="###3",
+                  aws_secret_access_key="###",
+                  aws_session_token="##")
 mycursor=mydb.cursor()
 # mycursor.execute("CREATE TABLE attachments (id INT AUTO_INCREMENT PRIMARY KEY,name varchar(225),binarydata MEDIUMBLOB)")
 mydb.commit()
